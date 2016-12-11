@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: 'reddit-app',
+  template: `
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
+  `,
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'app works!';
+
+
+export class AppComponent{
+  title = 'Reddit Latest Posts - Angular 2 version';
 }
+
+
+

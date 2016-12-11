@@ -4,7 +4,13 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom",
+      "es2015.promise"
+    ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
     "mapRoot": "./",
     "module": "es6",
     "moduleResolution": "node",
@@ -12,7 +18,8 @@
     "sourceMap": true,
     "target": "es5",
     "typeRoots": [
-      "../node_modules/@types"
+      "../node_modules/@types",
+      "../node_modules/promise"
     ]
   }
 }
